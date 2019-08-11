@@ -1,0 +1,152 @@
+:root {
+    --page-1-color: url('img/1.jpg') center center/cover no-repeat;
+    --page-2-color: url('img/2.jpg') center center/cover no-repeat;
+    --page-3-color: url('img/3.jpg') center center/cover no-repeat;
+    --page-4-color: url('img/4.jpg') center center/cover no-repeat;
+    --page-5-color: url('img/5.jpg') center center/cover no-repeat;
+    --page-6-color: url('img/6.jpg') center center/cover no-repeat;
+    --page-7-color: url('img/2.jpg') center center/cover no-repeat;
+    --page-8-color: url('img/2.jpg') center center/cover no-repeat;
+    
+    --animate-speed: 1.4s;   
+}
+
+body {
+    font-family: 'Lexend Exa', sans-serif;
+    line-height: 1.4;
+    color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.social-icons {
+    font-size: 3rem;
+}
+
+
+.container {
+    max-width: 1000px;
+}
+
+/* Page Colors */
+
+#page-1 {background: var(--page-1-color) }
+#page-2 {background: var(--page-2-color) }
+#page-3 {background: var(--page-3-color) }
+#page-4 {background: var(--page-4-color) }
+#page-5 {background: var(--page-5-color) }
+#page-6 {background: var(--page-6-color) }
+#page-7 {background: var(--page-7-color) }
+#page-8 {background: var(--page-8-color) }
+
+.page,
+.page-main {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+    
+}
+
+.page h1 {
+    font-size: 1rem;
+    line-height: 1.1;
+    margin: 1rem;
+}
+
+.page p {
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+.page-main h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+.page-main p {
+    font-size: 0.9rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+.btn-dark:hover {
+    background: #fff;
+    color: #333;
+}
+i {
+    color: #f3f3f3;
+}
+i.darker {
+    color: #f3f3f3;
+    opacity: 1;
+      animation: Pulsate 2s ease-in-out infinite;
+    }
+
+    @keyframes Pulsate {
+        from { opacity: 0.5; }
+        50% { opacity: 1; }
+        to { opacity: 0.5; }
+      }
+
+
+
+.darker {
+    color: #777;
+}
+
+/* Page-1 Animations */
+
+/* #page-1 h1 {
+    transform: translateY(-1000px);
+    animation: heading var(--animate-speed) forwards ease-in-out;
+}
+
+#page-1 p {
+    transform: translateX(-2800px);
+    animation: text 2s forwards ease-in-out 1s;
+}
+
+#page-1 .btn {
+    transform: translateX(2800px);
+    animation: button 2s forwards ease-out 1.2s;
+}
+
+
+@keyframes heading {
+    to {
+    transform: translateY(0);
+    }
+}
+
+@keyframes text {
+        to {
+        transform: translateX(0);
+        }    
+}
+
+@keyframes button {
+    to {
+    transform: translateX(0);
+    }    
+} */
