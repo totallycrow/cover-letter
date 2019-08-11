@@ -4,8 +4,8 @@
     --page-3-color: url('img/3.jpg') center center/cover no-repeat;
     --page-4-color: url('img/4.jpg') center center/cover no-repeat;
     --page-5-color: url('img/5.jpg') center center/cover no-repeat;
-    --page-6-color: url('img/6.jpg') center center/cover no-repeat;
-    --page-7-color: url('img/2.jpg') center center/cover no-repeat;
+    --page-6-color: url('img/2.jpg') center center/cover no-repeat;
+    --page-7-color: url('img/6.jpg') center center/cover no-repeat;
     --page-8-color: url('img/2.jpg') center center/cover no-repeat;
     
     --animate-speed: 1.4s;   
@@ -26,7 +26,7 @@ body {
 
 
 .container {
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 /* Page Colors */
@@ -54,7 +54,7 @@ body {
 }
 
 .page h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.1;
     margin: 1rem;
 }
@@ -115,38 +115,51 @@ i.darker {
     color: #777;
 }
 
-/* Page-1 Animations */
 
-/* #page-1 h1 {
-    transform: translateY(-1000px);
-    animation: heading var(--animate-speed) forwards ease-in-out;
-}
-
-#page-1 p {
-    transform: translateX(-2800px);
-    animation: text 2s forwards ease-in-out 1s;
-}
-
-#page-1 .btn {
-    transform: translateX(2800px);
-    animation: button 2s forwards ease-out 1.2s;
-}
-
-
-@keyframes heading {
-    to {
-    transform: translateY(0);
+/* RESPONSIVE - MOBILE DEVIES  */
+@media screen and (max-width: 700px) {
+    body {        
+        line-height: 1.2;
+        color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+        overflow: scroll;
     }
-}
+    
 
-@keyframes text {
-        to {
-        transform: translateX(0);
-        }    
-}
+    
+    .page,
+    .page-main {
+        
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 4rem;
+        
+    }
+    
+    .page h1 {
+        font-size: 1.1rem;
+        line-height: 1.0;
+        margin: 0.5rem;
+    }
+    
+    .page p {
+        font-size: 0.7rem;
+        margin-bottom: 1.2rem;
+    }
+    .page-main h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 1rem;
+    }
+    
+    .page-main p {
+        font-size: 0.9rem;
+    }
+    
 
-@keyframes button {
-    to {
-    transform: translateX(0);
-    }    
-} */
+ }
